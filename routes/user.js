@@ -4,9 +4,10 @@ const mysql = require("mysql");
 
 const pool = mysql.createPool({
   connectionLimit: 10,
-  host: "localhost",
-  user: "root",
-  database: "osgeo_project"
+  host: "us-cdbr-iron-east-05.cleardb.net",
+  user: "b97c0a421b381a",
+  password: "b07b2cef",
+  database: "heroku_fc72d7c948e70b5"
 });
 
 function getConnection() {
