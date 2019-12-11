@@ -19,6 +19,8 @@ const router = require("./routes/user");
 
 app.use(router);
 
-app.listen(3005, () => {
-  console.log("sever is up");
+const PORT = process.env.PORT || 3005;
+
+app.listen(PORT, () => {
+  console.log("sever is up and running");
 });
