@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- <div>
+      Create a project by filling out the fields below:
+      <hr />
+      <form action="/project_create" method="POST">
+        <input placeholder="Project Name" name="create_project_name" />
+        <input placeholder="Project Description" name="create_project_desc" />
+        <input placeholder="Image Link" name="create_project_img_link" />
+        <input placeholder="Project Link" name="create_project_link" />
+        <button>Submit</button>
+      </form>
+    </div> -->
+
+    <div style="margin-top: 100px; width: 100%;">
+      <form class="form-horizontal" action="/project_create" method="POST">
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="email"
+            >Project Name:</label
+          >
+          <div class="col-sm-10">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Project Name"
+              name="create_project_name"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="pwd"
+            >Project Description:</label
+          >
+          <div class="col-sm-10">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Project Description"
+              name="create_project_desc"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="pwd">Image Link:</label>
+          <div class="col-sm-10">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Image Link"
+              name="create_project_img_link"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="pwd">Project Link:</label>
+          <div class="col-sm-10">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Project Link"
+              name="create_project_link"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <style>
+      .form-control {
+        width: 70%;
+      }
+    </style>
+  </body>
+</html>
