@@ -3,6 +3,9 @@ const morgan = require("morgan");
 const mysql = require("mysql");
 const app = express();
 
+var swStats = require("swagger-stats");
+app.use(swStats.getMiddleware({}));
+
 const bodyParser = require("body-parser");
 
 app.use(bodyParser.urlencoded({ extended: false }));
